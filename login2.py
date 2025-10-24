@@ -11,7 +11,7 @@ def capturar_credenciales():
   password = input_password.get()
 
   # El método config admite argumento foreground="" con el cuál podemos especificar el color del texto
-  if usuario == USUARIO:
+  if usuario == USUARIO and password == PASSWORD:
       mensaje.config(text="Acceso correcto", bg="green2", fg="white")
       mensaje.pack()
   else:  
